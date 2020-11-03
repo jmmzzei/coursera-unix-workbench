@@ -6,7 +6,7 @@ function ask() {
 	fi
 }
 
-COUNT=$(ls | wc -l)
+COUNT=$(($(ls -a | wc -l) - 2)) 
 echo How many files are in this directory? 
 read -p "Insert a value: " USERINPUT
 
